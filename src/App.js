@@ -34,7 +34,7 @@ function App() {
     }
     temp = JSON.parse(e);
     console.log("temp", typeof temp, temp);
-    let temp1 = '// IsRequestName入参\nexport interface IsRequestName {\n';  //入参
+    let temp1 = '// IsRequestName入参\nexport interface IsRequestName {\n';  // 入参
     let temp2 = '// IsResponseName响应参数\nexport interface IsResponseName {\n'; // 响应参数
     temp.properties.map((item) => {
       if (item['scope'] === "request") {
