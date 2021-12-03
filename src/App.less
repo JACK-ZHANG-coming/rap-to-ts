@@ -1,0 +1,48 @@
+.rap-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  margin: auto;
+  box-sizing: border-box;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rap-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .rap-content-title {
+      width: 61%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 20px;
+      margin-bottom: 10px;
+    }
+
+    .rap-content-body {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      textarea {
+        width: 30%;
+      }
+    }
+  }
+
+  .rap-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+  }
+
+}

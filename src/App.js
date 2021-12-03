@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.less';
 
 function App() {
   const [nowString, setNowString] = useState('');
@@ -73,12 +74,22 @@ function App() {
 
   return (
     <>
-      <h2>简易的rap参数转ts格式工具</h2>
-      <div>
-        <textarea rows="30" cols="50" value={nowString} name='value1' onChange={onChange}></textarea>
-        <textarea rows="30" cols="50" value={tsString} name='value2' onChange={onChange2}></textarea>
-        <button type="" onClick={() => { onClick(1) }}>点击转换入参</button>
-        <button type="" onClick={() => { onClick(2) }}>点击转换返回参数</button>
+      <div className="rap-body">
+        <h2>简易的rap参数转ts格式工具</h2>
+        <div className="rap-content">
+          <div className="rap-content-title">
+            <div>&nbsp;&nbsp;转换前rap导出的json内容：</div>
+            <div>&nbsp;&nbsp;转后的ts格式：</div>
+          </div>
+          <div className="rap-content-body">
+            <textarea rows="30" cols="50" value={nowString} name='value1' onChange={onChange}></textarea>
+            <textarea rows="30" cols="50" value={tsString} name='value2' onChange={onChange2}></textarea>
+          </div>
+        </div>
+        <div className="rap-button">
+          <button type="" onClick={() => { onClick(1) }}>点击转换入参</button>
+          <button type="" onClick={() => { onClick(2) }}>点击转换返回参数</button>
+        </div>
       </div>
     </>
   );
