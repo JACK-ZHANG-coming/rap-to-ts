@@ -90,6 +90,7 @@ function App() {
           <button type="" onClick={() => { onClick(1) }}>点击转换入参</button>
           <button type="" onClick={() => { onClick(2) }}>点击转换返回参数</button>
         </div>
+        <img className='github-icon' src={require(`./imgs/help.png`).default} alt="example"></img>
       </div>
     </>
   );
